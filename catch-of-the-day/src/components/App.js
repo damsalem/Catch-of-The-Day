@@ -58,7 +58,7 @@ class App extends React.Component {
           </ul>
         </div>
         {/* Component2 */}
-        <Order />
+        <Order fishes={this.state.fishes} order={this.state.order} />
         {/* Component3 */}
         {/* 0B. This is the Props which passes addFish down to Inventory */}
         <Inventory
