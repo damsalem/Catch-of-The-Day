@@ -1,5 +1,6 @@
 //Brings in all the necessary resources
 import React from "react";
+import PropTypes from "prop-types";
 import Header from "./Header";
 import Order from "./Order";
 import Inventory from "./Inventory";
@@ -13,6 +14,10 @@ class App extends React.Component {
     //Set the state in an appropriate shape/type (array, string, int), we used object
     fishes: {},
     order: {}
+  };
+
+  static propTypes = {
+    match: PropTypes.object
   };
 
   componentDidMount() {
