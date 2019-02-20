@@ -42,6 +42,7 @@ class App extends React.Component {
 
   componentWillUnmount() {
     base.removeBinding(this.ref);
+    console.log("why no log?");
   }
 
   //0A. This method is accessed by the AddFishForm component (two levels down) using Props
@@ -129,6 +130,7 @@ class App extends React.Component {
           deleteFish={this.deleteFish}
           loadSampleFishes={this.loadSampleFishes}
           fishes={this.state.fishes}
+          storeId={this.props.match.params.storeId}
         />
       </div>
     );
